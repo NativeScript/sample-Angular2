@@ -1,0 +1,1 @@
+{"version":3,"sources":["annotations.js"],"names":[],"mappings":"AAGA,KAAO,CAAA,CAAA,KAAO,qCAAmC,CAAC;AAAA","file":"/home/korchev/github/angular/modules/angular2/annotations.js","sourcesContent":["/**\n * Define public API for Angular here.\n */\nexport * from './src/core/annotations/annotations';\n"]}

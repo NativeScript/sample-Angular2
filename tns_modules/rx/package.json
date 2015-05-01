@@ -1,0 +1,84 @@
+{
+  "name": "rx",
+  "title": "Reactive Extensions for JavaScript (RxJS)",
+  "description": "Library for composing asynchronous and event-based operations in JavaScript",
+  "version": "2.4.6",
+  "homepage": "https://github.com/Reactive-Extensions/RxJS",
+  "author": {
+    "name": "Cloud Programmability Team",
+    "url": "https://github.com/Reactive-Extensions/RxJS/blob/master/authors.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Reactive-Extensions/RxJS.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Reactive-Extensions/RxJS/issues"
+  },
+  "jam": {
+    "main": "dist/rx.all.js"
+  },
+  "browser": {
+    "index.js": "dist/rx.all.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "benchmark": "*",
+    "grunt-cli": "*",
+    "grunt": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-qunit": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-saucelabs": "*",
+    "grunt-jscs": "*",
+    "load-grunt-tasks": "*"
+  },
+  "keywords": [
+    "LINQ",
+    "FRP",
+    "Reactive",
+    "Events",
+    "Rx",
+    "RxJS"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "gitHead": "a47af00e0ec4c09ec4f30d8cb73238495ead46d6",
+  "_id": "rx@2.4.6",
+  "_shasum": "ac93b9f132f226b5aba76ff24c4f9a869a37aa5b",
+  "_from": "rx@2.4.6",
+  "_npmVersion": "2.7.3",
+  "_nodeVersion": "0.12.0",
+  "_npmUser": {
+    "name": "mattpodwysocki",
+    "email": "matthew.podwysocki@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "vvilhonen",
+      "email": "vesa@vilhonen.com"
+    },
+    {
+      "name": "mattpodwysocki",
+      "email": "matthew.podwysocki@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "ac93b9f132f226b5aba76ff24c4f9a869a37aa5b",
+    "tarball": "http://registry.npmjs.org/rx/-/rx-2.4.6.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/rx/-/rx-2.4.6.tgz"
+}
