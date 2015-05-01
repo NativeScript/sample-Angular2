@@ -5,4 +5,4 @@ You can clone and build the app with the latest NativeScript 1.0 release.
 
 To see the app in action please check this [video screencast](http://screencast.com/t/TjZSEHB2). 
 
-# We are looking for commiters for this integration!
+# We are looking for contributors with Angular expeirence for this integration!
