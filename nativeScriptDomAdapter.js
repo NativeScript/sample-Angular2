@@ -1,51 +1,12 @@
-
-var view = require("ui/core/view");
-var shims = require("./shims");
 var label_1 = require("ui/label");
 var button_1 = require("ui/button");
+var vmModule = require("./main-view-model");
 var angular2_1 = require('angular2/angular2');
 var dom_adapter_1 = require('angular2/src/dom/dom_adapter');
 var DOM = require('angular2/src/dom/dom_adapter');
 var browser_adapter_1 = require('angular2/src/dom/browser_adapter');
 var collection_1 = require('angular2/src/facade/collection');
 
-var TodoApp = (function () {
-
-    /* 
-        Perform the initial binding of the Label element. Binding is specified like this
-        <Label [text]="message" />
-    */
-    function TodoApp() {
-        console.log("TodoApp constructor");
-        this.message = "NativeScript <3 AngularJS 2!!";
-    }
-
-    /* 
-        This is the function which is binded to the Button tap event like this
-        <Button text="TAP3" (tap)="onTap()" />
-    */
-    TodoApp.prototype.onTap = function () {
-        console.log("onTap");
-        this.message = "AngularJS <3 {N} on " + new Date();
-    };
-
-    TodoApp = __decorate([
-                            Component({ selector: 'Todo-App' }), 
-                            Template({ inline: '<Label [text]="message" /><Button text="TAP3" (tap)="onTap()" />' })
-                         ], TodoApp);
-    return TodoApp;
-})();
-
-function pageLoaded(args) {
-    page = args.object;
-    angular2_1.bootstrap(TodoApp);
-}
-exports.pageLoaded = pageLoaded;
-
-var document = {};
-var page;
-var label;
-var button;
 var NativeScriptDomAdapter = (function (_super) {
     __extends(NativeScriptDomAdapter, _super);
     function NativeScriptDomAdapter() {
@@ -455,24 +416,5 @@ var NativeScriptDomAdapter = (function (_super) {
     };
     return NativeScriptDomAdapter;
 })(DOM.DomAdapter);
-browser_adapter_1.BrowserDomAdapter.makeCurrent = function () {
-    dom_adapter_1.setRootDomAdapter(new NativeScriptDomAdapter());
-};
-function addAnnotation(c, annotation) {
-    (c.annotations || (c.annotations = [])).push(annotation);
-    return c;
-}
-function Component(arg, parameters) {
-    return function (c) {
-        if (parameters) {
-            c.parameters = parameters.map(function (p) { return [p]; });
-        }
-        addAnnotation(c, new angular2_1.Component(arg));
-        return;
-    };
-}
-function Template(arg) {
-    return function (c) { return addAnnotation(c, new angular2_1.Template(arg)); };
-}
 
-
+exports.NativeScriptDomAdapter = NativeScriptDomAdapter;
