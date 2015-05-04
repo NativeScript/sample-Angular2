@@ -4,5 +4,3 @@ This is our first attempt to integrate Angular 2.0 in NativeScript. Please comme
 You can clone and build the app with the latest NativeScript 1.0 release.
 
 To see the app in action please check this [video screencast](http://screencast.com/t/TjZSEHB2). 
-
-# We are looking for contributors with Angular experience for this integration!
