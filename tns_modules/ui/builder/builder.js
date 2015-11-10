@@ -120,7 +120,7 @@ function parseInternal(value, exports) {
     }, function (e) {
         throw new Error("XML parse error: " + e.message);
     }, true);
-    xmlParser.parse(value.replace('xmlns="http://www.nativescript.org/tns.xsd"', "").replace("xmlns='http://www.nativescript.org/tns.xsd'", ""));
+    xmlParser.parse(value.replace('xmlns="http://schemas.nativescript.org/tns.xsd"', "").replace("xmlns='http://schemas.nativescript.org/tns.xsd'", ""));
     return rootComponentModule;
 }
 function load(fileName, exports) {
