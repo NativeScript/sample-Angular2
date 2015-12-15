@@ -1,6 +1,4 @@
 # sample-Angular2
-This is our first attempt to integrate Angular 2.0 in NativeScript. Please comment in [issue #103](https://github.com/NativeScript/NativeScript/issues/103)
+This **was** our first attempt to integrate Angular 2.0 in NativeScript. Please comment in [issue #103](https://github.com/NativeScript/NativeScript/issues/103)
 
-You can clone and build the app with the latest NativeScript 1.0 release.
-
-To see the app in action please check this [video screencast](http://screencast.com/t/TjZSEHB2). 
+We now recommend that you get the [TodoMVC example](https://github.com/NativeScript/sample-ng-todomvc) which integratest with the latest Angular 2 alpha releases and uses the NativeScript renderer.
